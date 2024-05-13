@@ -12,3 +12,8 @@ word = random.choice(word_list)
 
 # Step 4: Print out the newly created list to the standard output (screen).
 print(word)
+
+# Step 5: Ask the user to enter a single letter.
+guess = input("Enter a single letter: ")
+
+print(guess)
