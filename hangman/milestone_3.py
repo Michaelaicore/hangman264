@@ -1,16 +1,16 @@
-
 import random
 
 # List of secret words
 words = ["apple", "banana", "orange", "grape", "kiwi"]
 
+
 def check_guess(guess):
     """
     Check if the guessed letter is in the randomly chosen secret word.
-    
+
     Args:
         guess (str): The guessed letter.
-        
+
     Returns:
         bool: True if the guess is correct, False otherwise.
     """
@@ -27,6 +27,7 @@ def check_guess(guess):
     else:
         print(f"Sorry, '{guess}' is not in the word. Try again.")
         return False
+
 
 def ask_for_input():
     """
@@ -46,6 +47,7 @@ def ask_for_input():
 
         else:
             print("Invalid letter. Please, enter a single alphabetical character.")
+
 
 # Step 4: Outside the function, call the ask_for_input function to test your code.
 ask_for_input()

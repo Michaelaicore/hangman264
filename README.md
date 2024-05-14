@@ -23,11 +23,21 @@ The project is a Python script for a word guessing game. It randomly selects a w
 ## Usage
 1. Run the Python script:
     ```bash
-    python milestone_2.py
+    python hangman/milestone_5.py
     ```
 2. Follow the instructions on the screen to play the word guessing game.
 
 ## File Structure
+```
+├── hangman
+│ ├── hangman_Template.py
+│ ├── milestone_2.py
+│ ├── milestone_3.py
+│ ├── milestone_4.py
+│ └── milestone_5.py
+└── README.md
+```
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE).

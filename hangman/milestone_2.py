@@ -1,4 +1,5 @@
-import random 
+import random
+
 
 def get_random_word(word_list):
     """
@@ -6,11 +7,13 @@ def get_random_word(word_list):
     """
     return random.choice(word_list)
 
+
 def get_user_guess():
     """
     Prompts the user to enter a single letter and returns it.
     """
     return input("Enter a single letter: ")
+
 
 def validate_guess(guess):
     """
@@ -18,8 +21,8 @@ def validate_guess(guess):
     """
     return len(guess) == 1 and guess.isalpha()
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     # Step 1: Create a list containing the names of your 5 favorite fruits.
     vehicle = ["car", "van", "lorry", "motorbike", "bus"]
 

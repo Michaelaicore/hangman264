@@ -24,7 +24,7 @@ Usage:
 directory as this script.
 2. Run the script using Python:
     ```
-    python milestone_5.py
+    python hangman/milestone_5.py
     ```
 
 3. Follow the on-screen instructions to play the Hangman game.
