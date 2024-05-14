@@ -28,3 +28,6 @@ The project is a Python script for a word guessing game. It randomly selects a w
 2. Follow the instructions on the screen to play the word guessing game.
 
 ## File Structure
+
+## License
+This project is licensed under the [MIT License](LICENSE).
