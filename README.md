@@ -30,7 +30,6 @@ The project is a Python script for a word guessing game. It randomly selects a w
 ## File Structure
 ```
 ├── hangman
-│ ├── hangman_Template.py
 │ ├── milestone_2.py
 │ ├── milestone_3.py
 │ ├── milestone_4.py
