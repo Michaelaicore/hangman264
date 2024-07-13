@@ -65,7 +65,7 @@ class Hangman:
         Asks the user for a letter.
     """
 
-    def __init__(self, word_list, num_lives=5):
+    def __init__(self, word_list:list, num_lives:int=5)->None:
         """
         Initialize the Hangman game.
 
@@ -85,7 +85,7 @@ class Hangman:
         print(f"The mystery word has {self.num_letters} characters")
         print(self._word_guessed)
 
-    def _update_word_guessed(self, guess):
+    def _update_word_guessed(self, guess:str)->None:
         """
         Updates the word_guessed list with the guessed letter.
 
@@ -106,7 +106,7 @@ class Hangman:
 
         self.num_lives -= 1
 
-    def check_guess(self, guess):
+    def check_guess(self, guess:str)->None:
         """
         Checks if the guessed letter is in the word and updates the game state accordingly.
 
@@ -125,7 +125,7 @@ class Hangman:
             print(f"Sorry, '{guess}' is not in the word.")
             print(f"You have {self.num_lives} lives left.")
 
-    def ask_for_input(self):
+    def ask_for_input(self)->None:
         """
         Asks the user for a letter and checks if it's valid, then calls check_guess method.
         """
@@ -134,8 +134,10 @@ class Hangman:
             guess = input("Guess a letter: ")
             if len(guess) != 1 or not guess.isalpha():
                 print("Invalid letter. Please, enter a single alphabetical character.")
+                continue
             elif guess in self._guessed_letters:
                 print("You already tried that letter!")
+                continue
             else:
                 self.check_guess(guess)
                 self._guessed_letters.append(guess)

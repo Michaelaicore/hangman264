@@ -33,7 +33,7 @@ directory as this script.
 from milestone_4 import Hangman
 
 
-def play_game(word_list):
+def play_game(words):
     """
     Play the Hangman game.
 
@@ -43,13 +43,13 @@ def play_game(word_list):
         A list of words to be used in the game.
     """
     num_lives = 5
-    game = Hangman(word_list, num_lives)
+    game = Hangman(words, num_lives)
 
     while True:
         if game.num_lives == 0:
             print("You lost!")
             break
-        elif game.num_letters > 0:
+        if game.num_letters > 0:
             game.ask_for_input()
         else:
             print("Congratulations. You won the game!")
