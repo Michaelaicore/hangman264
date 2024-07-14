@@ -143,6 +143,12 @@ class Hangman:
                 self._guessed_letters.append(guess)
                 break
 
+    def print_guessed_word(self)->None:
+        """
+        Print the guessed word"""
+        the_word = ''.join(map(str, self._word_guessed))
+        print(f"You guessed word is {the_word}.")
+
 
 if __name__ == "__main__":
     # Testing the Hangman class
