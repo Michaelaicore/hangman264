@@ -56,6 +56,7 @@ def play_game(words):
             break
     game.print_guessed_word()
 
+
 if __name__ == "__main__":
     word_list = ["apple", "banana", "orange", "grape", "kiwi"]
     play_game(word_list)
